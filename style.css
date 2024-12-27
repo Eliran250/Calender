@@ -1,0 +1,79 @@
+body{
+    background-image: url("https://picjumbo.com/wp-content/uploads/beautiful-nature-scenery-free-photo-2210x1473.jpg");
+    background-repeat: no-repeat;
+ 
+    background-position: center;
+}
+/* table */
+table {
+    width: 800px;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 10px auto 0 auto;
+    table-layout: fixed;
+}
+
+th,td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    overflow: hidden;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: gray;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+.numberIcon {
+    width: 40px;
+}
+
+button{
+    background-color: teal;
+    color: white;
+    border-radius: 7px;
+}
+
+/* colorCurrentDay */
+.today {
+    background-color: green;
+}
+
+h1{
+    color: white;
+}
+h2{
+    color: white;
+}
+
+@keyframes scaredAnimaition {
+    0%{
+      transform:rotate(0deg) ;
+    }
+    50%{
+      transform: rotate(4deg);
+    }
+    100%{
+      transform: rotate(-4deg);
+    }
+  
+  }
+  
+  
+button:hover {
+    animation: scaredAnimaition 0.2s infinite;
+}
+
+.events{
+    background-color: palevioletred;
+    animation: scaredAnimaition 0.5s infinite;
+}
